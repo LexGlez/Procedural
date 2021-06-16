@@ -8,14 +8,17 @@ public class procedura : MonoBehaviour
     int a;
     void Start()
     {
-        
+         
     }
 
-    void Update(){}
+    void Update(){
+    a=a+9;
+        Instantiate(camino, new Vector3(0, 0, a), Quaternion.identity);
+    }
 
     public void proceso(){
         
-        a+=9;
+        a=a+9;
         Instantiate(camino, new Vector3(0, 0, a), Quaternion.identity);
     }
 }
